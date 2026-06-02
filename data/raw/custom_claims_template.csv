@@ -1,0 +1,7 @@
+claim_id,member_id,provider_id,provider_name,specialty_group,claim_type,service_line,diagnosis_group,allowed_amount,paid_amount,member_responsibility_amount,claim_from_date,claim_thru_date,inpatient_flag,ed_flag,readmission_flag,state_code,plan_type,chronic_condition_count,raf_like_score
+C10001,M1001,P2001,Northstar Medical Group,Primary care,Professional,Office visit,Diabetes,240,186,36,2025-01-04,2025-01-04,0,0,0,TX,MA-PD,3,1.42
+C10002,M1001,P2304,Lakeside Hospital,Facility,Inpatient,Inpatient stay,CHF,18600,14200,900,2025-02-10,2025-02-14,1,0,1,TX,MA-PD,3,1.42
+C10003,M1002,P2112,Metro Emergency Physicians,Emergency medicine,Outpatient,Emergency department,COPD,1700,1210,160,2025-03-02,2025-03-02,0,1,0,FL,Medicare Advantage,4,1.88
+C10004,M1003,P2450,Precision Imaging Associates,Radiology,Outpatient,Imaging,Musculoskeletal,920,655,80,2025-03-18,2025-03-18,0,0,0,CA,Medicare Advantage,1,0.74
+C10005,M1004,P2602,CardioCare Specialists,Cardiology,Professional,Specialist visit,CHF,520,398,44,2025-04-05,2025-04-05,0,0,0,NY,MA-PD,2,1.21
+
