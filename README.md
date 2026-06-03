@@ -3,9 +3,9 @@
 
 Healthcare Claims Intelligence & Risk Analytics Platform is a production-ready portfolio project that turns synthetic or custom claims data into a governed analytics warehouse, predictive work queues, executive metrics, and a premium interactive dashboard.
 
-[Live GitHub Pages App](https://BIRJUNG-THAPA.github.io/healthcare-claims-intelligence-risk-analytics/) | [GitHub Repository](https://github.com/BIRJUNG-THAPA/healthcare-claims-intelligence-risk-analytics) | [Deployment Workflow](https://github.com/BIRJUNG-THAPA/healthcare-claims-intelligence-risk-analytics/actions/workflows/deploy-pages.yml)
+[Live GitHub Pages App](https://birjung.github.io/healthcare-claims-intelligence-risk-analytics/) | [GitHub Repository](https://github.com/BIRJUNG/healthcare-claims-intelligence-risk-analytics) | [Deployment Workflow](https://github.com/BIRJUNG/healthcare-claims-intelligence-risk-analytics/actions/workflows/deploy-pages.yml)
 
-![Deploy healthcare claims intelligence dashboard](https://github.com/BIRJUNG-THAPA/healthcare-claims-intelligence-risk-analytics/actions/workflows/deploy-pages.yml/badge.svg)
+![Deploy healthcare claims intelligence dashboard](https://github.com/BIRJUNG/healthcare-claims-intelligence-risk-analytics/actions/workflows/deploy-pages.yml/badge.svg)
 ![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/pandas-Claims%20Analytics-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-Risk%20Models-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
@@ -50,9 +50,9 @@ If you use custom claims data, do not commit PHI, member names, patient identifi
 
 | Resource | Link |
 |---|---|
-| Live app | https://BIRJUNG-THAPA.github.io/healthcare-claims-intelligence-risk-analytics/ |
-| Repository | https://github.com/BIRJUNG-THAPA/healthcare-claims-intelligence-risk-analytics |
-| Deployment workflow | https://github.com/BIRJUNG-THAPA/healthcare-claims-intelligence-risk-analytics/actions/workflows/deploy-pages.yml |
+| Live app | https://birjung.github.io/healthcare-claims-intelligence-risk-analytics/ |
+| Repository | https://github.com/BIRJUNG/healthcare-claims-intelligence-risk-analytics |
+| Deployment workflow | https://github.com/BIRJUNG/healthcare-claims-intelligence-risk-analytics/actions/workflows/deploy-pages.yml |
 | Blueprint | [docs/Healthcare_Claims_Intelligence_Project_Blueprint.md](docs/Healthcare_Claims_Intelligence_Project_Blueprint.md) |
 
 ---
@@ -202,7 +202,7 @@ healthcare-claims-intelligence-risk-analytics/
 ### 1. Clone
 
 ```powershell
-git clone https://github.com/BIRJUNG-THAPA/healthcare-claims-intelligence-risk-analytics.git
+git clone https://github.com/BIRJUNG/healthcare-claims-intelligence-risk-analytics.git
 cd healthcare-claims-intelligence-risk-analytics
 ```
 
@@ -334,7 +334,7 @@ The GitHub Actions workflow:
 Live app:
 
 ```text
-https://BIRJUNG-THAPA.github.io/healthcare-claims-intelligence-risk-analytics/
+https://birjung.github.io/healthcare-claims-intelligence-risk-analytics/
 ```
 
 ---
@@ -354,90 +354,7 @@ https://BIRJUNG-THAPA.github.io/healthcare-claims-intelligence-risk-analytics/
 
 ## Author
 
-Built by [BIRJUNG-THAPA](https://github.com/BIRJUNG-THAPA).
+Built by [Birjung Thapa](https://github.com/BIRJUNG).
 
 This project demonstrates payer analytics architecture, claims finance, PMPM logic, readmission analytics, provider benchmarking, FWA review, HCC/RAF-style risk segmentation, ML scoring, UI design, testing, and public deployment.
 
-# Healthcare Claims Intelligence & Risk Analytics
-
-### End-to-End Healthcare Analytics Platform for Claims, Risk Adjustment, Provider Performance, Readmissions, and Cost Optimization
-
-This project demonstrates a healthcare analytics platform built to simulate real-world payer and population health analytics workflows. The solution combines claims intelligence, utilization analysis, provider benchmarking, fraud/waste/abuse (FWA) detection, readmission analytics, and HCC/RAF-style risk stratification into a single analytics environment.
-
-The platform generates actionable insights for healthcare organizations through data engineering pipelines, predictive modeling, business intelligence reporting, and an interactive executive dashboard.
-
----
-
-## Portfolio Highlights
-
-- Healthcare Claims Analytics
-- Risk Adjustment & RAF Scoring
-- Population Health Analytics
-- Readmission Risk Analysis
-- Provider Performance Benchmarking
-- Fraud, Waste & Abuse Detection
-- PMPM (Per Member Per Month) Analytics
-- Predictive Modeling using Machine Learning
-- Interactive Executive Dashboard
-- Automated Data Quality Validation
-- GitHub Actions CI/CD Deployment
-
----
-
-## Business Value
-
-Healthcare organizations need data-driven methods to identify high-risk members, control costs, improve outcomes, and optimize provider performance.
-
-This project demonstrates how healthcare claims data can be transformed into meaningful business intelligence by:
-
-- Identifying high-cost members
-- Measuring utilization patterns
-- Tracking readmission trends
-- Benchmarking provider performance
-- Detecting potential fraud and abuse signals
-- Supporting risk adjustment initiatives
-- Monitoring PMPM financial performance
-
----
-
-## Technologies Used
-
-- Python
-- Pandas
-- NumPy
-- Scikit-Learn
-- SQLite
-- Plotly
-- HTML/CSS/JavaScript
-- GitHub Actions
-- GitHub Pages
-
----
-
-## Live Application
-
-GitHub Pages:
-https://BIRJUNG-THAPA.github.io/healthcare-claims-intelligence-risk-analytics/
-
-Repository:
-https://github.com/BIRJUNG/healthcare-claims-intelligence-risk-analytics
-
----
-
-## Author
-
-**Birjung Thapa**
-
-MS Data Science Candidate – University of Colorado Boulder
-
-Healthcare Analytics | Risk Adjustment Analytics | Data Science | SQL | Python | Machine Learning | Healthcare Claims Analytics
-
-LinkedIn: <YOUR LINKEDIN URL>
-
-GitHub: https://github.com/BIRJUNG
-
----
-
-### Disclaimer
-
-All records used by this project are synthetic and generated solely for educational, portfolio, and demonstration purposes. No real patient information, PHI, or proprietary healthcare data is included.
