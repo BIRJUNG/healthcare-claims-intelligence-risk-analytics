@@ -1,6 +1,7 @@
 __pycache__/
 *.py[cod]
 .pytest_cache/
+*.egg-info/
 .venv/
 venv/
 .env
@@ -12,5 +13,6 @@ reports/dashboard/
 reports/figures/
 reports/data_quality_report.csv
 reports/executive_summary.md
+reports/release_manifest.json
 dist/
 

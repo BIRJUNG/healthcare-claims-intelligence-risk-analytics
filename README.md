@@ -294,6 +294,7 @@ data/raw/custom_claims_template.csv
 | Interactive dashboard | `reports/dashboard/healthcare_claims_intelligence_dashboard.html` |
 | Static web artifact | `dist/index.html` |
 | Executive summary | `reports/executive_summary.md` |
+| Release manifest | `reports/release_manifest.json` |
 | Quality report | `reports/data_quality_report.csv` |
 | Model metrics | `data/processed/model_metrics.json` |
 | High-cost member mart | `data/processed/mart_high_cost_member.csv` |
@@ -318,6 +319,8 @@ The test suite verifies:
 - quality gates
 - end-to-end dashboard and warehouse creation
 - custom claims CSV ingestion
+
+The pipeline also writes `reports/release_manifest.json`, a machine-readable handoff file with output paths, row counts, quality status, model metrics, and the expected GitHub Pages URL.
 
 ---
 
