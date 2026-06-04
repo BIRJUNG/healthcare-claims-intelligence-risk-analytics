@@ -35,11 +35,14 @@ def test_end_to_end_pipeline_writes_outputs(tmp_path):
     assert config.dashboard_path.exists()
     assert config.summary_path.exists()
     assert result["manifest_path"].exists()
+    assert result["sql_summary_path"].exists()
     assert (config.data_processed_dir / "mart_member_month_pmpm.csv").exists()
     assert (config.data_processed_dir / "model_high_cost_member_scores.csv").exists()
     manifest = json.loads(result["manifest_path"].read_text(encoding="utf-8"))
+    sql_summary = json.loads(result["sql_summary_path"].read_text(encoding="utf-8"))
     assert manifest["quality"]["status"] == "PASS"
     assert manifest["record_counts"]["fact_claim"] == 2_800
+    assert {item["name"] for item in sql_summary} >= {"high_cost_member_interventions", "fwa_payment_integrity_queue"}
 
     conn = sqlite3.connect(config.sqlite_path)
     try:

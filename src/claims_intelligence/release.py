@@ -37,6 +37,8 @@ def write_release_manifest(
             "model_card": _relative(config.model_card_path, config.project_root),
             "data_quality_report": _relative(config.reports_dir / "data_quality_report.csv", config.project_root),
             "csv_export_dir": _relative(config.data_processed_dir, config.project_root),
+            "sql_analytics_summary": _relative(config.reports_dir / "sql_analytics_summary.json", config.project_root),
+            "sql_analytics_dir": _relative(config.reports_dir / "sql_analytics", config.project_root),
         },
         "quality": {
             "status": "PASS" if quality_failures == 0 else "FAIL",

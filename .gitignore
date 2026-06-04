@@ -14,5 +14,7 @@ reports/figures/
 reports/data_quality_report.csv
 reports/executive_summary.md
 reports/release_manifest.json
+reports/sql_analytics/
+reports/sql_analytics_summary.json
 dist/
 

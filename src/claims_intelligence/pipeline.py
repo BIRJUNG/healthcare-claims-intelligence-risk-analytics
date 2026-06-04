@@ -13,6 +13,7 @@ from .models import train_and_score_models
 from .quality import run_quality_checks
 from .release import write_release_manifest
 from .reporting import render_dashboard, write_executive_summary
+from .sql_analytics import run_sql_analytics
 from .warehouse import ensure_output_dirs, export_csv_tables, write_sqlite_database
 
 
@@ -34,6 +35,7 @@ def run_pipeline(config: PipelineConfig) -> dict[str, object]:
     all_tables = {**base_tables, **marts, **model_outputs.score_tables}
     write_sqlite_database(all_tables, config.sqlite_path)
     export_csv_tables(all_tables, config.data_processed_dir)
+    sql_summary_path = run_sql_analytics(config)
     quality_report = run_quality_checks(base_tables, marts, model_outputs.metrics)
     quality_report.to_csv(config.reports_dir / "data_quality_report.csv", index=False)
     write_project_docs(config.docs_dir)
@@ -47,6 +49,7 @@ def run_pipeline(config: PipelineConfig) -> dict[str, object]:
         "dashboard_path": config.dashboard_path,
         "summary_path": config.summary_path,
         "manifest_path": manifest_path,
+        "sql_summary_path": sql_summary_path,
         "quality_failures": failures,
         "table_count": len(all_tables),
         "claim_count": len(base_tables["fact_claim"]),
@@ -91,6 +94,7 @@ def main(argv: list[str] | None = None) -> int:
     print(f"Dashboard: {result['dashboard_path']}")
     print(f"Executive summary: {result['summary_path']}")
     print(f"Release manifest: {result['manifest_path']}")
+    print(f"SQL analytics summary: {result['sql_summary_path']}")
     print(f"Quality failures: {result['quality_failures']}")
     if result["quality_failures"] and not args.allow_quality_failures:
         return 2

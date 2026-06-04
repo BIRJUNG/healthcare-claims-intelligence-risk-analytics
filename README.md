@@ -189,6 +189,7 @@ healthcare-claims-intelligence-risk-analytics/
 | Data | pandas, NumPy |
 | ML | scikit-learn |
 | Warehouse | SQLite |
+| SQL analytics | Named SQL query pack in `sql/05_analytics/healthcare_claims_risk_queries.sql` |
 | Visuals | Plotly |
 | UI | HTML, CSS, JavaScript |
 | Tests | pytest |
@@ -321,6 +322,7 @@ The test suite verifies:
 - custom claims CSV ingestion
 
 The pipeline also writes `reports/release_manifest.json`, a machine-readable handoff file with output paths, row counts, quality status, model metrics, and the expected GitHub Pages URL.
+It also executes the SQL analytics pack and writes query outputs to `reports/sql_analytics/`, proving that the SQLite warehouse supports direct SQL investigation.
 
 ---
 
